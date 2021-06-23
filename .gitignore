@@ -1,0 +1,9 @@
+presentation_tmp
+*.aux
+*.log
+*.log.md
+*.nav
+*.out
+*.snm
+*.toc
+*.pdf
