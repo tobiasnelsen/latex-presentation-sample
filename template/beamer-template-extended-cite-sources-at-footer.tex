@@ -1,0 +1,16 @@
+% Taken from http://tex.stackexchange.com/a/48485:
+
+% Example use of this command can be found in contents/example-sources-cited-in-slide.tex
+
+% Specify size and color of the sources
+\setbeamerfont{framesource}{size=\tiny}
+\setbeamercolor{framesource}{fg=gray}
+
+% Show sources at the bottom left of the slide
+\usepackage[absolute,overlay]{textpos}
+
+\newcommand{\citeAtFooter}[1]{\begin{textblock*}{1cm}(0.3cm,9.35cm)
+    \begin{beamercolorbox}{framesource}
+        \usebeamerfont{framesource}\usebeamercolor[fg]{framesource} {Sources: #1}
+    \end{beamercolorbox}
+\end{textblock*}}
