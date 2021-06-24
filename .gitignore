@@ -6,4 +6,5 @@ presentation_tmp
 *.out
 *.snm
 *.toc
+*.pdf
 *.err
