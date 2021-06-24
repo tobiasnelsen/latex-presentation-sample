@@ -1,0 +1,18 @@
+% - The xcolor package with the x11names options defines several colors,
+%   e.g. DeepSkyBlue4 which is used in template/beamer-template-original.tex
+% - compress: Tries to make all navigation bars as small as possible
+% - fleqn: Position equations at a fixed indent from the left margin 
+%   rather than centered in the text column
+\documentclass[10pt,xcolor=x11names,compress,fleqn]{beamer}
+
+\input{libs/libs}
+\input{template/beamer-template}
+
+\input{content/title-slide-information}
+
+\begin{document}
+
+  \input{content/title-slide}
+  \input{content/example-sources-listed-in-appendix}
+		
+\end{document}
