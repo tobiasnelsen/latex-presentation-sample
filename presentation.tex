@@ -5,19 +5,65 @@
 %   rather than centered in the text column
 \documentclass[10pt,xcolor=x11names,compress,fleqn]{beamer}
 
+% If you're happy with the look of this presentation showcase, you can
+% copy the following two lines to your tex document. You then have to
+% copy the libs and template folder to your presentation folder as well.
+% If you want to use different packages or change certain commands, you 
+% might want to place your changes inside the libs folder!
 \input{libs/libs}
-
 \input{template/beamer-template}
+
+% You can modify this file to change what's being displayed on the title slide
 \input{content/example-title-slide-information}
 
 \begin{document}
 
+  % Don't modify these two slides if you're happy with the look of this
+  % presentation showcase
   \input{content/title-slide}
-  \input{content/example-listing-normal}
-  \input{content/example-listing-nested}
-  \input{content/example-block}
+  \input{content/table-of-contents}
+  
+  % -----------------------------------------------------------------------------
+  % Here start part which defines which content is displayed in the presentation!
+  % (except for the title slide, see line 16)
+  % -----------------------------------------------------------------------------
+  \section{\scshape Sections}  
+  \input{content/example-separating-slide}
+  \input{content/example-sections-and-subsections}
+  
+  \section{\scshape Listings}  
+  \input{content/example-listing}
+  
+  \section{\scshape Tables}
+  \input{content/example-tables}
+  
+  \section{\scshape Images}
   \input{content/example-image}
+  
+  \section{\scshape Citing sources}
   \input{content/example-sources-cited-in-slide}
+  
+  \section{\scshape Other}
+  
+  \subsection{Blocks}
+  \input{content/example-block}
+  
+  \subsection{Math}
+  \input{content/example-math}
+  
+  \subsection{TikZ}
+  \input{content/example-tikz}
+  
+  \subsection{Alignment}
+  \input{content/example-alignment}
+  
+  \subsection{Slide numbers}   
+  \input{content/example-slide-numbers}
+  
+  \subsection{Uncover a slide piecewise}
+  \input{content/example-uncover-slide-piecewise}
+  
+  \section{\scshape Sources}   
   \input{content/example-sources-listed-in-appendix}
 		
 \end{document}

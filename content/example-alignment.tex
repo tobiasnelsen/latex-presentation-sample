@@ -1,0 +1,23 @@
+\begin{frame}{Alignment example}
+
+  The equations below are aligned side by side:
+  
+  \begin{columns}
+    \column{.5\textwidth}
+    \begin{align*}
+        &y^2 \stackrel{\times}{=}{(\lceil \sqrt[]{n} \rceil)}^2 \hphantom{+1)} -n \\ 
+        &y^2 \stackrel{\times}{=}{(\lceil \sqrt[]{n} \rceil+1)}^2 -n \\
+        &... \\
+        &y^2  \stackrel{\checkmark}{=}{(\lceil \sqrt[]{n} \rceil+z)}^2 -n \\ 
+    \end{align*}
+    \column{.5\textwidth}
+    \begin{align*}
+        & n = 119,\sqrt[]{n}=10.9 \\
+        & y^2 \stackrel{\times}{=}{11}^2 -119 = 30  \\
+        & y^2 \stackrel{\checkmark}{=}{12}^2 -119 = 25  \\
+        & \hphantom{y^2}\rightarrow x=12, y = 5 \\
+        & n=(12+5) \cdot (12-5) \\
+    \end{align*}
+  \end{columns}
+
+\end{frame}

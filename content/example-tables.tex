@@ -1,0 +1,55 @@
+\begin{frame}{Table example \#1}
+
+  \begin{table}[htb]
+
+    \centering
+  
+    % Instead of using the special C{Xcm} command you could use a regular "c" instead for having centered columns (try it!), 
+    % but then the columns would be too wide. Giving a specific cm width prevents this.
+    \begin{tabular}{ C{1.5cm}      C{0.9cm}       C{2.0cm}                  C{1.5cm}                C{2.3cm}}
+                                 & \# targ. ads & Sites only Prec./Recall & Ads only Prec./Recall & Ads \& Sites Prec./Recall \\
+       \toprule
+                     Same cat.   & 22           & 20/10                   & 16/8                  & 17/18 \\
+       \hline                       
+                     Same parent & 17           & 54/34                   & 51/24                 & 53/50\\
+       \hline                       
+                     Same root   & 14           & 76/61                   & 82/40                 & 79/81\\
+       \bottomrule
+       
+    \end{tabular}
+
+    \caption{Almost a standard table (except for the fixed with of the columns)}
+
+  \end{table}
+
+\end{frame}
+
+\begin{frame}{Table example \#2}
+
+  \begin{table}[htb]
+  
+    \centering
+
+    \begin{tabular}{lll}
+      \toprule  
+      Vertraulichkeit & Integrität &  Integritätsprüfung \\
+      \midrule    
+
+      \multirow{4.4}{*}{\shortstack[l]{AES/CTR\\(SPOC)\\(eSPOC)\\(PCoding)}} & 
+      \multirow{2}{*}{HMAC} & 
+      \multirow{2}{*}{E} \\
+
+      & & \\ 
+      \cmidrule(rl){2-3}
+
+      & \multirow{2}{*}{ECDSA} & \multirow{2}{*}{E, (Z+E)} \\
+
+      &  & \\
+      \bottomrule
+    \end{tabular}
+
+    \caption{A special table in which one vertical line doesn't span all columns}
+
+  \end{table}
+  
+\end{frame}
