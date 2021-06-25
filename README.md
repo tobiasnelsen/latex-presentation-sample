@@ -2,7 +2,7 @@
 
 [![CC BY-SA 4.0][cc-by-sa-shield]][cc-by-sa]
 
-Sample latex presentation to show basic latex presentation features. If you like what you see, you might use this as a starting point to create your own latex presentation!
+Sample latex presentation to show basic latex presentation features. If you like what you see, you might want to use this as a starting point to create your own latex presentation!
 
 Compile the latex presentation `presentation.tex` into a PDF file 
 + by (recommended) using a Latex editor of your choice
